@@ -171,9 +171,22 @@ ul#projects li{
 /*Contact form */
 
 .quote input, .quote textarea{
-    width:40%;
+    width:70%;
     padding: 5px;
 
+}
+
+.container .contact{
+    border: 1px solid;
+    background-color: #ffefe2;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 20px 20px 20px 10px #888888;
+    transition: box-shadow 3s ease-in-out;
+}
+
+#contactoverlay{
+    padding: 50px;
 }
 
 footer {
@@ -217,5 +230,8 @@ footer {
     #newsletter form input[type="email"], .contact input, .contact textarea{
       width:100%;
       margin-bottom:5px;
+    }
+    #contactoverlay{
+        padding: 25px 0 0 0;
     }
   }
