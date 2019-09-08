@@ -141,13 +141,14 @@ header a:hover:not(#title){
 
 #boxes .box{
     float:left;
-    width: 30%;
+    width: 23%;
     padding: 10px;
     text-align: center;
 }
 
 #boxes .box img{
     width: 90px;
+    height: 90px;
 }
 
 .displayimages img{
