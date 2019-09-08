@@ -1,6 +1,5 @@
 function contact_us(){
     var data = $("form[name=algoForm]").serialize();
-    alert(data)
     if(document.getElementById("message_area").value.trim() == ""){
         alert("Nothing entered!")
     }

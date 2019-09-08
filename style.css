@@ -125,6 +125,13 @@ header a:hover:not(#title){
     height: 25px;
     width: 250px;
 }
+/* Confirmation */
+#confirmation{
+    padding: 15px;
+    color: #ffffff;
+    background: #00e927;
+    display: none;
+}
 
 /*Boxes */
 
