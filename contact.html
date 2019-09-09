@@ -37,10 +37,18 @@
     </section>
 
     <section id="confirmation">
-            <div class="container">
-                <h1>✔ Thanks for sending me an email! </h1>
-            </div>
-        </section>
+        <div class="container">
+            <h1 id="confirmationtext">✔ Thanks for sending me an email </h1>
+            <button id="denialbutton" onclick="closebutton('#confirmation')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    <section id="denial">
+        <div class="container">
+            <h1 id="denialtext">❌ No email entered! </h1>
+            <button id="denialbutton" onclick="closebutton('#denial')"><h2>Ok</h2></button>
+        </div>
+    </section>
 
     
 

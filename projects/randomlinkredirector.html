@@ -36,14 +36,35 @@
         </div>
     </section>
 
+    <section id="confirmation">
+        <div class="container">
+            <h1 id="confirmationtext">✔ Copied to Clipboard! </h1>
+            <button id="denialbutton" onclick="closebutton('#confirmation')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    <section id="denial">
+        <div class="container">
+            <h1 id="denialtext">❌ No links generated! </h1>
+            <button id="denialbutton" onclick="closebutton('#denial')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
     <section id="main">
         <div class="container">
             <article id="main-col">
-                <h1 class="page-title"> Random Link Redirector</h1>
+                <h1 class="page-title"></h1>
                 <ul id="projects">
-                    <li onclick="randomlinkredirector.html">
-                        <h3>Random Link Redirector</h3>
-                        <p>This application will allow you enter several links and will generate a link that contains all those other links. When a user clicks on the generated URL, they will be taken to one of the stored URL's randomly. This was made in JavaScript, using jQuery calls to get and post data.</p>
+                    <li id="randomlink" onclick="randomlinkredirector.html">
+                        <h3 id="header_rlr">Random Link Redirector</h3>
+                        
+                        <input type="text" id="folderinput" style="width:100%!important;" tabindex="1" placeholder="Folder name">
+                        <textarea class="firstmirror" style="width:100%!important;" data-textarea-id="t_9685F93175_0" id="folderlinks" tabindex="2" placeholder="Links" name="mirror[9685F93175][]" spellcheck="false"></textarea>
+                        <button type = "submit" id = "button_click" onclick="shorturl()"><h3>Bundle into one URL</h3></button>
+                        <div id="linkoutputdiv">
+                            <input  readonly type="text" id="linkoutput" tabindex="3" placeholder="Your link will be available here">
+                            <button type = "submit" id = "copy_click" onclick="copyToClipboard()"><h5>Copy to Clipboard</h5></button>
+                        </div>
                     </li>
 
                 </ul>
@@ -58,6 +79,8 @@
 
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/randomlinkredirector.js"></script>
 
     <footer>
         <p>Faris Kazmi Web Design, Copyright &copy; 2019</p>

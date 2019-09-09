@@ -1,7 +1,13 @@
+
 function contact_us(){
     var data = $("form[name=algoForm]").serialize();
     if(document.getElementById("message_area").value.trim() == ""){
-        alert("Nothing entered!")
+
+        $(document).ready(function(){
+            document.getElementById("denialtext").innerHTML = "❌ No message included!"
+            $("#denial").slideDown();
+          });
+        
     }
     else{
         $.ajax({
@@ -14,3 +20,10 @@ function contact_us(){
             
         }
 }
+
+function closebutton(name){
+    $(document).ready(function(){
+        $(name).slideUp();
+      });
+
+  }
