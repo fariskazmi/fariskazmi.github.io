@@ -41,7 +41,7 @@
 
     <section id="confirmation">
         <div class="container">
-            <h1 id="confirmationtext">✔ Thanks for sending me an email </h1>
+            <h1 id="confirmationtext">✔ Thanks for sending me a message </h1>
             <button id="denialbutton" onclick="closebutton('#confirmation')"><h2>Ok</h2></button>
         </div>
     </section>
@@ -49,6 +49,13 @@
     <section id="denial">
         <div class="container">
             <h1 id="denialtext">❌ No email entered! </h1>
+            <button id="denialbutton" onclick="closebutton('#denial')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    <section id="waiting">
+        <div class="container">
+            <h1 id="waitingtext">⌛ Sending message...  </h1>
             <button id="denialbutton" onclick="closebutton('#denial')"><h2>Ok</h2></button>
         </div>
     </section>
@@ -65,12 +72,12 @@
                     <div>
                             <label>Name</label>
                             <br>
-                            <input name="name" type="text" placeholder="Name">
+                            <input id="name_contact" name="name" type="text" placeholder="Name">
                         </div>
                         <div>
                             <label>Email</label>
                             <br>
-                            <input name="email" type="email" placeholder="Email Address">
+                            <input id="email_contact" name="email" type="email" placeholder="Email Address">
                         </div>
                         <div>
                             <label>Message</label>
@@ -78,7 +85,7 @@
 
                         <textarea name="message" id="message_area" placeholder="Message" rows="5"></textarea>
                     </div>
-                    <button class="button_1" type="submit" id = "contact" onclick="contact_us()">Send</button>
+                    <button class="button_1" type="button" id = "contact" onclick="contact_us()">Send</button>
                     
                 </form>
             </div>

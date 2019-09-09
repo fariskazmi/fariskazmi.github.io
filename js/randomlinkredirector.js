@@ -126,22 +126,23 @@ if (window.location.hash != "") {
     var hashh = window.location.hash.substr(random_number+4);
     var encode_location = window.location.href.indexOf("@");
     var decoded_folder = window.atob(window.location.href.substring(encode_location+1));
+    document.getElementById("header_rlr").innerHTML = decoded_folder;
+    document.getElementById("button_click").innerHTML = "Take me there!";
+    document.getElementById("folderinput").outerHTML = "You are being redirected to:";
+    document.getElementById("folderlinks").outerHTML = "";
+    document.getElementById("linkoutput").outerHTML = "";
+    document.getElementById("copy_click").outerHTML = "";
 
     $.getJSON(endpoint + "/" + hashh + "/" + random_number, function (data) {
         window.data_link = data["result"];
         var lc = window.data_link.indexOf("/", 8)+1;
         var temp_display = window.data_link.substring(0, lc);
         var display_link = temp_display.concat("...");
-
-        document.getElementById("header_rlr").innerHTML = decoded_folder;
-        document.getElementById("button_click").innerHTML = "Take me there!";
-        document.getElementById("folderinput").outerHTML = "You are being redirected to:";
+        alert("Success")
         document.getElementById("folderlinks").outerHTML = display_link;
-        document.getElementById("linkoutput").outerHTML = "";
-        document.getElementById("copy_click").outerHTML = "";
 
         setTimeout(function(){
-            window.location.href = window.data_link;
+            window.location.href = window.data_link;    
             }, 2000);
     });
 }

@@ -133,6 +133,13 @@ header a:hover:not(#title){
     display: none;
 }
 
+#waiting{
+    padding: 15px;
+    color: #ffffff;
+    background: #d4d800;
+    display: none;
+}
+
 #denial{
     padding: 15px;
     color: #ffffff;
@@ -140,7 +147,7 @@ header a:hover:not(#title){
     display: none;
 }
 
-#denialtext, #confirmationtext{
+#denialtext, #confirmationtext, #waitingtext{
     float: left;
 }
 
