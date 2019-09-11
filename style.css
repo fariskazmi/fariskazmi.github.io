@@ -36,7 +36,7 @@ ul{
 
 /* Header */
 header{
-    background: #35425a;
+    background: linear-gradient(to left, #35425a, #12223f);
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
@@ -87,7 +87,7 @@ header a:hover:not(#title){
 /* Showcase */
 
 #showcase{
-    min-height: 400px;
+    object-fit: cover;
     background:url('img/background.webp') no-repeat 0 -100px;
     text-align: center;
     color: #ffffff;
