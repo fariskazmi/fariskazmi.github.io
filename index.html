@@ -9,8 +9,19 @@
     <link rel = "icon" href =  
 "/img/logo_website.png" 
         type = "image/x-icon"> 
+        <style>
+            #background_pic{
+                background:url(img/background.gif) no-repeat;
+                height: auto;
+                width: auto;
+                background-size: 100% 100%;
+                
+            }
+        
+        </style>
 </head>
 <body>
+    <div id="background_pic">
     <header>
         <div class = "container">
             <div id="branding">
@@ -30,28 +41,37 @@
     </header>
 
     <section id="showcase">
-        <div class="container">
+    
             <h1>Welcome to my website</h1>
             <p>Here you can check out my project experience and contact me if you wish</p>
-        </div>
+        
     </section>
+    <article id="vertical-main-col">
+            <ul id="vertical-projects">
+                <li id="contact-main">
+                    <h3><a href="contact.html">Contact Me</a></h3>
+                    <p>Want to contact me with a question or comment? Click here!</p>
+                </li>
 
-    <section id="newsletter">
-        <div class="container">
-            <h1>Subscribe to our newsletter??</h1>
-            <form action="">
-                <input type="email" placeholder="Enter Email...">
-                <button type="submit" class="button_1">Subscribe</button>
-            </form>
-        </div>
-    </section>
+                <li id="projects-main">
+                    <h3><a href="projects/projects.html">Projects</a></h3>
+                    <p>Want to check out what I've done? Click here!</p>
+                </li>
+
+                <li id="about-main">
+                    <h3><a href="about.html">About Me</a></h3>
+                    <p>Want to find out more about who I am? Click here!</p>
+                </li>
+
+            </ul>
+        </article>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="/js/index.js"></script>
-    <footer>
-        <p>Faris Kazmi Web Design, Copyright &copy; 2019</p>
-    </footer>
+
     
     
 </body>

@@ -1,7 +1,6 @@
-const background_image = document.querySelector("#showcase");
-const header = document.querySelector("header");
-const body = document.querySelector("body");
+const hero = document.querySelector("#background_pic");
 
-const timeline_1 = new TimelineMax();
+const timeline1 = new TimelineMax();
 
-timeline_1.fromTo(background_image,2, {height: "0px"}, {height: "452px"}).fromTo(header, 3, {width: "60%"}, {width: "100%"}, "-=2");
+timeline1.fromTo(hero, 1, {height: "0%"}, {height: "100%", ease: Power2.easeInOut})
+.fromTo(hero, 3, {width: "80%"}, {width: "100%", ease: Power2.easeInOut}, "-=3");
