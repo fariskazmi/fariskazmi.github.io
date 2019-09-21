@@ -206,6 +206,12 @@ ul#projects li{
     margin-bottom: 5px;
     background: #e6e6e6;
 }
+ul#projects li#aversion:hover{
+    height: 350px;
+    background: url(/img/Aversion.jpg);
+    background-size: 100% 100%;
+    color: white;
+}
 ul#vertical-projects li{
     list-style: none;
     padding: 20px;
@@ -261,6 +267,7 @@ ul#vertical-projects li#projects-main{
     text-align: center;
     box-shadow: 20px 20px 20px 10px #888888;
     transition: box-shadow 3s ease-in-out;
+    border: #e8491d solid 1px;
 }
 
 #contactoverlay{
