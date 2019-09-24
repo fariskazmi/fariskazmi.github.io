@@ -1,4 +1,4 @@
-var endpoint = "https://www.jsonstore.io/d4a1cddd05acff3eaad2cb5da76cf91ebc695e37a4e72e97b046572faca9893d";
+var endpoint = "https://www.jsonstore.io/21c4b19f48642dde93121439143a989408f1e823302586cef03370a7a30e0fe6";
 
 function copyToClipboard() {
     var text = document.getElementById("linkoutput").value;
@@ -100,7 +100,7 @@ function shorturl(){
             var encoded_folder = window.btoa(folder_name);
             window.location.hash = "/" + urls.length + "/" + window.location.hash + "@" + encoded_folder;
             document.getElementById("linkoutput").value = window.location.href
-            window.history.pushState("", "", oldurl);
+            //window.history.pushState("", "", oldurl);
             send_request(urls);
             $(document).ready(function(){
                 $("#denial").slideUp();
@@ -108,6 +108,9 @@ function shorturl(){
                 $("#confirmation").slideDown();
               });
         }
+    }
+    else if(window.data_link != ""){
+        window.location.href = window.data_link;
     }
 }
 
@@ -119,8 +122,7 @@ function getRandomInt(min, max) {
 
 
 if (window.location.hash != "") {
-    alert(window.location.hash)
-    number = window.location.hash.substring(2,4)
+    number = window.location.hash.substring(2,4);
     number = number.replace(/\D/g,'');
     random_number = Math.round(Math.random() * (number-1)) + 1;
     var hashh = window.location.hash.substr(random_number+4);
@@ -129,7 +131,6 @@ if (window.location.hash != "") {
     document.getElementById("header_rlr").innerHTML = decoded_folder;
     document.getElementById("button_click").innerHTML = "Take me there!";
     document.getElementById("folderinput").outerHTML = "You are being redirected to:";
-    document.getElementById("folderlinks").outerHTML = "";
     document.getElementById("linkoutput").outerHTML = "";
     document.getElementById("copy_click").outerHTML = "";
 
@@ -138,12 +139,8 @@ if (window.location.hash != "") {
         var lc = window.data_link.indexOf("/", 8)+1;
         var temp_display = window.data_link.substring(0, lc);
         var display_link = temp_display.concat("...");
-        alert("Success")
         document.getElementById("folderlinks").outerHTML = display_link;
 
-        setTimeout(function(){
-            window.location.href = window.data_link;    
-            }, 2000);
     });
 }
 

@@ -3,7 +3,7 @@ body{
     padding: 0;
     margin: 0;
     height: 100vh;
-    background: linear-gradient(to left, #ffffff, #b4bac4);
+    background: linear-gradient(to left, #f0f0f0, #dfdbd6);
 }
 
 /* Global */
@@ -214,7 +214,7 @@ ul#projects li#aversion:hover{
 }
 ul#projects li#rolltheball:hover{
     height: 350px;
-    background: url(/img/rolltheballgifsmall.gif);
+    background: url(/img/rolltheballgifwebp.webp);
     background-size: 100% 100%;
     color: white;
 }
@@ -268,7 +268,7 @@ ul#vertical-projects li#projects-main{
 
 .container .contact{
     border: 1px solid;
-    background-color: #ffefe2;
+    background: linear-gradient(to right, #f0f0f0, #dfdbd6);
     padding: 50px;
     text-align: center;
     box-shadow: 20px 20px 20px 10px #888888;
