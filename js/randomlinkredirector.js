@@ -133,14 +133,14 @@ if (window.location.hash != "") {
     document.getElementById("folderinput").outerHTML = "You are being redirected to:";
     document.getElementById("linkoutput").outerHTML = "";
     document.getElementById("copy_click").outerHTML = "";
-    document.getElementById("folderlinks").outerHTML = "https://still-loading.com";
+    document.getElementById("folderlinks").innerHTML = "Still loading!";
 
     $.getJSON(endpoint + "/" + hashh + "/" + random_number, function (data) {
         window.data_link = data["result"];
         var lc = window.data_link.indexOf("/", 8)+1;
         var temp_display = window.data_link.substring(0, lc);
         var display_link = temp_display.concat("...");
-        document.getElementById("folderlinks").innerHTML = display_link;
+        document.getElementById("folderlinks").outerHTML = display_link;
 
     });
 }
