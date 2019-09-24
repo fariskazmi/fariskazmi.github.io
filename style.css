@@ -210,13 +210,16 @@ ul#projects li#aversion:hover{
     height: 350px;
     background: url(/img/Aversion.jpg);
     background-size: 100% 100%;
-    color: white;
 }
 ul#projects li#rolltheball:hover{
     height: 350px;
     background: url(/img/rolltheballgifwebp.webp);
     background-size: 100% 100%;
-    color: white;
+}
+ul#projects li#randomlinkredirector:hover{
+    height: 350px;
+    background: url(/img/randomlinkredirector.gif) 10px 150px;
+    background-size: 100% 100%;
 }
 ul#vertical-projects li{
     list-style: none;
@@ -292,6 +295,10 @@ ul#vertical-projects li#projects-main{
 
 #randomlink{
     text-align: center;
+}
+#rolltheballdiv{
+    background-color: rgba(230,230,230,0.9);
+    padding: 10px;
 }
 
 /* Media Queries */
