@@ -133,6 +133,7 @@ if (window.location.hash != "") {
     document.getElementById("folderinput").outerHTML = "You are being redirected to:";
     document.getElementById("linkoutput").outerHTML = "";
     document.getElementById("copy_click").outerHTML = "";
+    document.getElementById("folderlinks").outerHTML = "?";
 
     $.getJSON(endpoint + "/" + hashh + "/" + random_number, function (data) {
         window.data_link = data["result"];
