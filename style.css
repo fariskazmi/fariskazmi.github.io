@@ -322,7 +322,12 @@ ul#vertical-projects li#projects-main{
     aside#sidebar, #linkoutput{
       float:none;
       text-align:center;
-      width:100%;
+      width:94%;
+    }
+
+    header li{
+        display: inline;
+        padding: 0 10px 0 10px;
     }
   
     header{
@@ -348,4 +353,5 @@ ul#vertical-projects li#projects-main{
     #linkoutputdiv{
         padding-right: 35px;
     }
+    
   }
