@@ -232,7 +232,8 @@ ul#vertical-projects li{
     margin: 10px;
     border: #e8491d solid 1px;
     background: #e6e6e6;
-    width: 20%;
+    width: 21%;
+    min-width: 275px;
     float: right;
     height: 300px;
 }
@@ -241,11 +242,12 @@ ul#vertical-projects li:hover{
 }
 ul#vertical-projects li#contact-main{
 
-    background: url(/img/contact.gif) no-repeat;
+    background: url(/img/logocontact_gifupdated.gif) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
+    opacity: 0.9;
     
 }
 ul#vertical-projects li#about-main{
