@@ -1,4 +1,4 @@
-const hero = document.querySelector("#background_pic");
+const hero = document.body[0];
 
 const timeline1 = new TimelineMax();
 

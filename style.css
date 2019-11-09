@@ -208,7 +208,7 @@ ul#projects li{
 }
 ul#projects li#aversion:hover{
     height: 350px;
-    background: url(/img/Aversion.jpg);
+    background: url(/img/Aversion.webp);
     background-size: 100% 100%;
 }
 ul#projects li#rolltheball:hover{
@@ -239,6 +239,7 @@ ul#vertical-projects li{
 }
 ul#vertical-projects li:hover{
     opacity: 0.7;
+    color: rgb(121, 78, 0);
 }
 ul#vertical-projects li#contact-main{
 
