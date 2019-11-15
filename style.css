@@ -208,7 +208,7 @@ ul#projects li{
 }
 ul#projects li#aversion:hover{
     height: 350px;
-    background: url(/img/Aversion.webp);
+    background: url(/img/aversion.webp);
     background-size: 100% 100%;
 }
 ul#projects li#rolltheball:hover{
