@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects | Zoom Downloader</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel = "icon" href =  
+"/img/logo_website.png" 
+        type = "image/x-icon"> 
+
+        <style>
+            a:link{
+            color:rgb(183, 183, 209);
+            }
+            a:visited{
+            color:rgb(211, 197, 211);
+            }
+            a:hover{
+            color:rgb(255, 230, 183);
+            }
+            a:focus{
+            color:rgb(178, 233, 178);
+            }
+            a:active{
+            color:rgb(236, 178, 178);
+            }
+        
+        </style>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <div id="branding">
+                <h1><a id="title" href="/index.html"><span class="highlight">Faris</span> Kazmi</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li class="current"><a href="/projects/projects.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section id="confirmation">
+        <div class="container">
+            <h1 id="confirmationtext">✔ Copied to Clipboard! </h1>
+            <button id="denialbutton" onclick="closebutton('#confirmation')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    <section id="denial">
+        <div class="container">
+            <h1 id="denialtext">❌ No links generated! </h1>
+            <button id="denialbutton" onclick="closebutton('#denial')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title"></h1>
+                <ul id="projects">
+                    <li id="randomlink" onclick="randomlinkredirector.html">
+                        <h3 id="header_rlr">Zoom Downloader</h3>
+                        <div id="linkoutputdiv">
+                            <input  type = "text" id="linkoutput" tabindex="3" placeholder="Paste Zoom link here">
+                            <button type = "submit" id = "copy_click" onclick="download_zoom()"><h5>Download</h5></button>
+                        </div>
+                    </li>
+
+                </ul>
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                <h3>How this works</h3>
+                <p>This application will allow you enter several links and will generate a link that contains all those other links. When a user clicks on the generated URL, they will be taken to one of the stored URL's randomly. This was made in JavaScript, using jQuery calls to get and post data. </p>
+                <p>As an example, <a target = "_blank" href="https://fariskazmi.github.io/projects/randomlinkredirector.html#/3/#ybJ6hOPcDDem6At@R29vZ2xlIC8gWWFob28gLyBCaW5n">this link</a> will randomly take you to Google's, Yahoo's, or Bing's homepage.</p>
+            </div>
+            </aside>
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/js/zoomdl.js"></script>
+    
+</body>
+</html>
